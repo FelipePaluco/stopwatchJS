@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+
+     <!-- Bootstrap CSS & FontAwesome -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    </head>
+<body>
+
+    <div class="container">
+        <div class="text-center" style="margin-top: 150px">
+            <h3 class="display-3">Time elapsed:</h3>
+            <h1 class="display-1"><p id="cronometro">
+                00:00:00.000
+            </p></h1>
+            <button type="button" class="btn btn-success me-2 fw-bold" onclick="iniciarCronometro();">Start / Resume</button>
+            <button type="button" class="btn btn-warning me-2 fw-bold" onclick="pause();">Pause </button>
+            <button type="button" class="btn btn-danger me-2 fw-bold" onclick="reset();">Restart</button>
+            <div class="mt-4 w-50" style="margin: 0 auto;">
+                <hr>
+                <p class="text-muted">Developed by Felipe Paluco.</p>
+                <a class="text-muted" href="https://github.com/FelipePaluco"><i class="fab fa-github me-4"></i></a>
+                <a class="text-muted" href="https://www.linkedin.com/in/felipepaluco/"><i class="fab fa-linkedin me-4"></i></svg></a>
+                <a class="text-muted" href="https://www.facebook.com/FPaluco"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+            
+    </div>
+
+
+    <!-- BootstrapJS, JQuery, NotifyJS, StopWatch -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="notifyjs/notify.min.js"></script>
+    <script src="stopwatch.js"></script>
+    
+
+</body>
+</html>
